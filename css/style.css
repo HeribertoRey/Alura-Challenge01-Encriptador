@@ -53,6 +53,7 @@ section {
     padding: 0px;
     margin: 50px 100px 0px;
     background-color: aliceblue;
+    outline: none;
 }
 .areaTexto{
     width: 80%;
@@ -89,7 +90,6 @@ section {
     width: 30%;
 }
 
-
 .texto_enctriptado{
     background-color: white;
     width: 80%;
@@ -98,6 +98,12 @@ section {
     border-radius: 25px;
 }
 
+.texto_enctriptado img {
+    width: 336px;
+    height: 304px;
+    right: 220px;
+    top: 283px;
+}
 
 footer{
     width: 100%;
