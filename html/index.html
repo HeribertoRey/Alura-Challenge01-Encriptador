@@ -5,55 +5,52 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-
-        <h1 class="logo"><img src="../imagenes/Logo.png" alt="logo"></h1>
+        <img class="logo" src="../imagenes/Logo.png" alt="logo Alura">
     </header>
 
     <main>
+        <section class="seccion-1">
 
-        <section class="section1">
-            <div class="areaTexto">
-                <textarea class="texto_ha_encriptar" name="texto" 
-                id="" 
-                cols="30" 
-                rows="25" 
-                placeholder="Ingrese el texto aqui"></textarea>
+            <div class="contenedor-texto">
+                <textarea class="area-txt" placeholder="Ingrese el texto aqui"></textarea>
+                <p class="informacion"><img class="exclamacion" src="../imagenes/exclamation.png" alt="exclamation"> Solo letras minúsculas y sin acentos</p>
+            </div>
 
-
-                <div class="botones">
-                    <button class="btn-encriptar">
-                        Encriptar
-                    </button>
-
-
-                    <button class="btn-desencriptar">
-                        Desencriptar
-                    </button>
-
-                </div>
+            
+            <div class="contenedor-btns">
+                <input type="button" value="Encriptar" class="btn-encriptar">
+                <input type="button" value="Desencriptar" class="btn-desencriptar">
             </div>
         </section>
 
-        <section class="section2">
-            <div class="texto_enctriptado">
-                <img src="../imagenes/Muñeco.png" alt="muñeco">
+        <section class="seccion-2">
+                
+            <div class="contenedor-munheco">
+                <img class="munheco" src="../imagenes/Muñeco.png" alt="munheco">
+                <h3 class="temporal-h3">Ningún mensaje fue encontrado</h3>
+                <p class="temporal-p">Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+
+            <div class="txt-resultado">
+                <h3 class="resultado-h3">Mensaje Encriptado: </h3>
+                <textarea disabled class="resultado"></textarea>
+            </div>
+            <div class="txt-copiar">
+                <input onclick="copiar()" class="btn-copiar" type="button" value="Copiar" >
             </div>
         </section>
     </main>
 
     <footer>
+        <p>Encriptador Alura By Daniel Reyes Student DevOps</p>
     </footer>
-
 </body>
-
-
+    <script src="../java/script.js"></script>
 </html>
